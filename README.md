@@ -1,5 +1,5 @@
 # Classeviva Official Endpoints
-This repository provide the list of official Endpoints for Classeviva
+This repository provides the list of official Endpoints for Classeviva
 
 ***
 
@@ -27,9 +27,9 @@ _Warning: without these headers, the request will fail._
 
 ### User
 ##### Absence
-- **[<code>GET</code> v1/students/_{studentId}_/absences/details]()**
-- **[<code>GET</code> v1/students/_{studentId}_/absences/details/_{begin}_]()**
-- **[<code>GET</code> v1/students/_{studentId}_/absences/details/_{begin}_/_{end}_]()**
+- **[<code>GET</code> v1/students/_{studentId}_/absences/details](Absences/absences.md)**
+- **[<code>GET</code> v1/students/_{studentId}_/absences/details/_{begin}_](Absences/from.md)**
+- **[<code>GET</code> v1/students/_{studentId}_/absences/details/_{begin}_/_{end}_](Absences/from_to.md)**
 ##### Agenda
 - **[<code>GET</code> v1/students/_{studentId}_/agenda/all/_{begin}_/_{end}_]()**
 - **[<code>GET</code> v1/students/_{studentId}_/agenda/_{eventCode}_/_{begin}_/_{end}_]()**
@@ -38,7 +38,7 @@ _Warning: without these headers, the request will fail._
 - **[<code>GET</code> v1/students/_{studentId}_/didactics/item/_{contentId}_]()**
 ##### Notice Board
 - **[<code>GET</code> v1/students/_{studentId}_/noticeboard]()**
-- **[<code>GET</code> v1/students/_{studentId}_/noticeboard/read/_{eventCode}_/_{pubId}_/101]()**
+- **[<code>POST</code> v1/students/_{studentId}_/noticeboard/read/_{eventCode}_/_{pubId}_/101]()**
 - **[<code>GET</code> v1/students/_{studentId}_/noticeboard/attach/_{eventCode}_/_{pubId}_/101]()**
 ##### Schoolbooks
 - **[<code>GET</code> v1/students/_{studentId}_/schoolbooks]()**
@@ -49,7 +49,6 @@ _Warning: without these headers, the request will fail._
 - **[<code>GET</code> v1/students/_{studentId}_/cards]()**
 ##### Grades
 - **[<code>GET</code> v1/students/_{studentId}_/grades]()**
-- **[<code>GET</code> v1/students/_{studentId}_/grades/subject/_{subject}_]()**
 ##### Lessons
 - **[<code>GET</code> v1/students/_{studentId}_/lessons/today]()**
 - **[<code>GET</code> v1/students/_{studentId}_/lessons/_{day}_]()**
@@ -61,7 +60,10 @@ _Warning: without these headers, the request will fail._
 - **[<code>GET</code> v1/students/_{studentId}_/periods]()**
 ##### Subjects
 - **[<code>GET</code> v1/students/_{studentId}_/subjects]()**
-
+##### Documents
+- **[<code>POST</code> v1/students/_{studentId}_/documents](Documents/documents.md)**
+- **[<code>POST</code> v1/students/_{studentId}_/documents/check/_{hash}_](Documents/check%20document.md)**
+- **[<code>POST</code> v1/students/_{studentId}_/documents/read/_{hash}_](Documents/read%20document.md)**
 ### QR-Code
 ##### Upload
 - **[<code>POST</code> tools/app/default/app_qrcode_token.php?a=aUPLIMG]()**
